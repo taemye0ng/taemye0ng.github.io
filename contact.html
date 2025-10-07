@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo"><a href="index.html">personal website</a></h1>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="lists.html">Lists Demo</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Contact Me</h1>
+
+      <!-- Static form (no JS yet) -->
+      <form id="contact-form">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <p style="margin-top:1rem;">
+        Or email me directly: <a href="mailto:khuang97@calpoly.edu">khuang97@calpoly.edu</a>
+      </p>
+    </main>
+  </body>
+</html>

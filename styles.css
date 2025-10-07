@@ -1,0 +1,124 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #333;
+  padding: 1rem;
+}
+
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-list li a:hover {
+  color: #fff;
+}
+
+/* Page content */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background: #0077cc;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+form input[type="submit"]:hover {
+  background: #005fa3;
+}
+
+/* Resume sections */
+.section-title {
+  border-bottom: 2px solid #0077cc;
+  margin-top: 2rem;
+}
+
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry-title {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.entry-info {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.entry-description li {
+  margin-bottom: 0.4rem;
+}
+
+/* Footer (optional) */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: #f1f1f1;
+  margin-top: 2rem;
+}
