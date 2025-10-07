@@ -2,40 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lists</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar">
-      <h1 class="logo"><a href="index.html">Kris's personal website</a></h1>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="lists.html">Lists Demo</a></li>
-      </ul>
+      <div class="container navbar-inner">
+        <h1 class="logo">Kris Huang</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="lists.html">Lists Demo</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
-      <h1 class="page-title">hello world!</h1>
+    <main class="container">
+      <h1>Lists in HTML</h1>
 
-      <div class="about">
-        <div class="about-image">
-          <!-- Put sky.jpg in the same folder as this file -->
-          <img src="sky.jpg" alt="Sky with clouds" width="320" />
-        </div>
+      <section>
+        <h2>How to Get Into Hack4Impact</h2>
+        <ol>
+          <li>Apply for Hack4Impact as a developer</li>
+          <li>Complete the Starter Pack and interview</li>
+          <li>Become a Hack4Impact developer!</li>
+        </ol>
+      </section>
 
-        <div class="about-text">
-          <p>
-            <strong>Hack4Impact</strong> is a 501c3
-            <em>non-profit organization</em> that does non-profit software
-            development in support of local non-profits. We build websites,
-            volunteer management systems, and web applications that an
-            organization can use to serve their communities.
-          </p>
-        </div>
-      </div>
+      <section>
+        <h2>Starter Pack Skills</h2>
+        <ul>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>

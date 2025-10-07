@@ -1,31 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Home | Kris Huang</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <nav class="navbar">
-      <h1 class="logo">Kris Huang</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="container navbar-inner">
+        <h1 class="logo">Kris Huang</h1>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
-      <h1 class="page-title">Home</h1>
-      <p>
-        This is a personal website built using the Hack4Impact Starter Pack!
-        I'm currently a second year undergraduate studying computer engineering.
-      </p>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-inner">
+          <h1 class="page-title">Welcome!</h1>
+          <p class="lead">
+            Hi! I’m <strong>Kris Huang</strong>, a second-year Computer Engineering student at
+            <strong>Cal Poly San Luis Obispo</strong>. I’m passionate about building technology that creates real-world impact —
+            from AI-powered applications and intelligent systems to accessibility-focused projects that help people.
+          </p>
+        </div>
+      </section>
+
+      <!-- Quick Links Grid -->
+      <section class="grid cols-3">
+        <div class="card">
+          <h3>Projects</h3>
+          <p class="muted">Explore some of my work.</p>
+          <a href="portfolio.html" class="btn-small">View Projects →</a>
+        </div>
+        <div class="card">
+          <h3>Resume</h3>
+          <p class="muted">Coursework, experience, and skills.</p>
+          <a href="resume.html" class="btn-small">View Resume →</a>
+        </div>
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="muted">Let’s get in touch.</p>
+          <a href="contact.html" class="btn-small">Contact Me →</a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <p>&copy; 2025 Kris Huang. All rights reserved.</p>
+      <div class="container">© 2025 Kris Huang</div>
     </footer>
   </body>
 </html>

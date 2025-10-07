@@ -2,111 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar">
-      <h1 class="logo"><a href="index.html">personal website</a></h1>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="lists.html">Lists Demo</a></li>
-      </ul>
+      <div class="container navbar-inner">
+        <h1 class="logo">Kris Huang</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
+    <main class="container">
       <h1 class="page-title">Resume</h1>
-      <!-- Placeholder download (no file yet) -->
-      <a href="resume.pdf" download>Download Resume</a>
 
-      <section>
-        <h2 class="section-title">Header</h2>
-        <p><strong>Name:</strong> Kris Huang</p>
-        <p><strong>Email:</strong> <a href="mailto:khuang97@calpoly.edu">khuang97@calpoly.edu</a></p>
-        <p><strong>Location:</strong> LA</p>
-      </section>
+      <h2>Education</h2>
+      <p><strong>Cal Poly San Luis Obispo</strong> — B.S. Computer Engineering, Expected Dec 2027–May 2028</p>
 
-      <section>
-        <h2 class="section-title">Education</h2>
-        <div class="entry">
-          <h3 class="entry-title">Cal Poly San Luis Obispo</h3>
-          <p class="entry-info">B.S. Computer Engineering — Expected Dec 2027–May 2028</p>
-        </div>
-      </section>
+      <h2>Coursework</h2>
+      <ul>
+        <li>Programming in C++</li>
+        <li>Discrete Structures</li>
+        <li>Data Structures</li>
+        <li>Object-Oriented Programming and Design</li>
+        <li>Intro to Computer Organization</li>
+        <li>Digital Design</li>
+        <li>Electrical and Electronic Circuits</li>
+      </ul>
 
-      <section>
-        <h2 class="section-title">Coursework</h2>
-        <ul class="course-list">
-          <li>Programming in C++</li>
-          <li>Discrete Structures</li>
-          <li>Data Structures</li>
-          <li>Object-Oriented Programming and Design</li>
-          <li>Intro to Computer Organization</li>
-          <li>Digital Design</li>
-          <li>Electrical and Electronic Circuits</li>
-        </ul>
-      </section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, JavaScript, SQL, HTML/CSS, C++, Java</li>
+        <li>Django, Streamlit, Scikit-learn, TensorFlow, GPT-4 API, PostgreSQL, Git, Web Scraping</li>
+      </ul>
 
-      <section>
-        <h2 class="section-title">Skills</h2>
-        <h3>Languages</h3>
-        <ul class="skill-list">
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
-          <li>HTML/CSS</li>
-          <li>C++</li>
-          <li>Java</li>
-        </ul>
+      <h2>Projects</h2>
+      <h3>Medical Chatbot with Image Processing</h3>
+      <p><em>Sept 2024 – Mar 2025</em></p>
+      <ul>
+        <li>Built a dual-input chatbot comparing text-only vs image-augmented LLM workflows.</li>
+        <li>Implemented image preprocessing and inference pipeline to integrate visual signals.</li>
+      </ul>
 
-        <h3>Tools & Frameworks</h3>
-        <ul class="skill-list">
-          <li>Django</li>
-          <li>Streamlit</li>
-          <li>Scikit-learn</li>
-          <li>TensorFlow</li>
-          <li>GPT-4 API</li>
-          <li>PostgreSQL</li>
-          <li>Git</li>
-          <li>Web Scraping</li>
-        </ul>
-      </section>
+      <h2>Experience</h2>
+      <h3>Full Stack Engineer Intern — AI Camp</h3>
+      <p><em>Sept 2023 – Dec 2023</em></p>
+      <ul>
+        <li>Developed an AI-powered web app for a YouTube creator to increase engagement.</li>
+        <li>Implemented an LLM outreach chatbot using GPT-4 API with responsive Django templates.</li>
+      </ul>
 
-      <section>
-        <h2 class="section-title">Projects</h2>
-        <div class="entry">
-          <h3 class="entry-title">Medical Chatbot with Image Processing</h3>
-          <p class="entry-info">Sept 2024 – Mar 2025 · Python, OpenAI GPT-4 API, TensorFlow, OpenCV, Flask</p>
-          <ul class="entry-description">
-            <li>Built a dual-input chatbot to compare diagnostic accuracy between text-only and image-augmented LLM workflows.</li>
-            <li>Implemented image preprocessing and inference pipeline to integrate visual signals into responses.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Experience</h2>
-        <div class="entry">
-          <h3 class="entry-title">Full Stack Engineer Intern — AI Camp</h3>
-          <p class="entry-info">Sept 2023 – Dec 2023 · Python, JavaScript, HTML/CSS, Django, GPT-4 API, Git</p>
-          <ul class="entry-description">
-            <li>Developed an AI-powered web app for a YouTube creator to increase audience engagement.</li>
-            <li>Implemented an LLM-based outreach chatbot using GPT-4 API; improved accessibility with responsive Django templates.</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <h3 class="entry-title">Backend Engineering Intern — AI Camp</h3>
-          <p class="entry-info">June 2024 – July 2025 · Python, SQL, PostgreSQL, Web Scraping, Scikit-learn, Git</p>
-          <ul class="entry-description">
-            <li>Built a financial document–driven Q&A backend for Sprouts.ai, integrating data pipelines from SEC EDGAR.</li>
-            <li>Automated XBRL extraction and parsing; optimized DB indexing and API queries to improve performance.</li>
-          </ul>
-        </div>
-      </section>
+      <h3>Backend Engineering Intern — AI Camp</h3>
+      <p><em>June 2024 – July 2025</em></p>
+      <ul>
+        <li>Built a financial document–driven Q&A backend for Sprouts.ai with SEC EDGAR pipelines.</li>
+        <li>Automated XBRL parsing; optimized PostgreSQL indexing and API queries.</li>
+      </ul>
     </main>
+    <footer class="footer">
+      <div class="container">© 2025 Kris Huang</div>
+    </footer>
   </body>
 </html>

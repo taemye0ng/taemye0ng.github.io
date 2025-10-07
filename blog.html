@@ -2,24 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar">
-      <h1 class="logo"><a href="index.html">personal website</a></h1>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="lists.html">Lists Demo</a></li>
-      </ul>
+      <div class="container navbar-inner">
+        <h1 class="logo">Kris Huang</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
-      <h1>Blog</h1>
-      <p>Coming soon…</p>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-inner">
+          <h1 class="page-title">Blog Incoming!</h1>
+          <p class="lead">
+            Stay tuned!
+          </p>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">© 2025 Kris Huang</div>
+    </footer>
   </body>
 </html>
